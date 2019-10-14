@@ -31,25 +31,25 @@
     </dependencies>
 
 <!-- 1. Install to local repository: mvn install.-->
-<!-- 2. Uncomment the plugin below.-->
-<!-- 3. Execute the goal: mvn hello:hello.-->
-<!-- 4. The goal is hooked on the compile goal: mvn compile.-->
+<!-- 2. Execute the goal: mvn hello:hello.-->
+<!-- 3. Uncomment the execution below.-->
+<!-- 4. The goal is hooked on the compile phase: mvn compile.-->
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>com.infosupport</groupId>-->
-<!--                <artifactId>hello-maven-plugin</artifactId>-->
-<!--                <version>1.0.0</version>-->
-<!--                <executions>-->
+            <plugin>
+                <groupId>com.infosupport</groupId>
+                <artifactId>hello-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <executions>
 <!--                    <execution>-->
 <!--                        <phase>compile</phase>-->
 <!--                        <goals>-->
 <!--                            <goal>hello</goal>-->
 <!--                        </goals>-->
 <!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
